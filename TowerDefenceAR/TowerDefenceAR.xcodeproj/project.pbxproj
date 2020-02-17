@@ -18,6 +18,7 @@
 		2286422223F7302C00E0F4D5 /* ImpactFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2286422123F7302C00E0F4D5 /* ImpactFeedback.swift */; };
 		2286422A23F735DA00E0F4D5 /* TowerDefenceARViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2286422923F735DA00E0F4D5 /* TowerDefenceARViewDelegate.swift */; };
 		2286422C23F736A300E0F4D5 /* TowerDefenceScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2286422B23F736A300E0F4D5 /* TowerDefenceScene.swift */; };
+		2286423023FB1BC800E0F4D5 /* SCNReferenceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2286422F23FB1BC800E0F4D5 /* SCNReferenceNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		2286422123F7302C00E0F4D5 /* ImpactFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactFeedback.swift; sourceTree = "<group>"; };
 		2286422923F735DA00E0F4D5 /* TowerDefenceARViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowerDefenceARViewDelegate.swift; sourceTree = "<group>"; };
 		2286422B23F736A300E0F4D5 /* TowerDefenceScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowerDefenceScene.swift; sourceTree = "<group>"; };
+		2286422F23FB1BC800E0F4D5 /* SCNReferenceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNReferenceNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				2286420623F72D5D00E0F4D5 /* AppDelegate.swift */,
+				2286422E23FB1BA500E0F4D5 /* Extensions */,
 				2286422023F7301900E0F4D5 /* Helpers */,
 				2286421B23F72F0F00E0F4D5 /* Model */,
 				2286422323F7335200E0F4D5 /* Controller */,
@@ -136,6 +139,14 @@
 				2286422923F735DA00E0F4D5 /* TowerDefenceARViewDelegate.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		2286422E23FB1BA500E0F4D5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2286422F23FB1BC800E0F4D5 /* SCNReferenceNode.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 			files = (
 				2286422A23F735DA00E0F4D5 /* TowerDefenceARViewDelegate.swift in Sources */,
 				2286421D23F72F2300E0F4D5 /* Tower.swift in Sources */,
+				2286423023FB1BC800E0F4D5 /* SCNReferenceNode.swift in Sources */,
 				2286420B23F72D5D00E0F4D5 /* TowerViewController.swift in Sources */,
 				2286420723F72D5D00E0F4D5 /* AppDelegate.swift in Sources */,
 				2286422223F7302C00E0F4D5 /* ImpactFeedback.swift in Sources */,

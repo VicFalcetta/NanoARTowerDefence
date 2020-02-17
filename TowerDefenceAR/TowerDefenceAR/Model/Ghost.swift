@@ -19,6 +19,19 @@ class Ghost: SCNNode {
     }
     
     func loadModel() {
-        
+        let nodeGhost = SCNReferenceNode(named: "ghost")
+        addChildNode(nodeGhost)
+    }
+    
+    func setupPos() {
+        position = SCNVector3(10, 10, 10)
+    }
+    
+    func setupDeath() {
+        let initialPos = SCNVector3(0, 0, 0)
+        let actionMovement = SCNAction.move(to: initialPos, duration: 30)
+        let actionRemove = SCNAction.removeFromParentNode()
+        let sequence = SCNAction.sequence([actionMovement, actionRemove])
+        runAction(sequence)
     }
 }
