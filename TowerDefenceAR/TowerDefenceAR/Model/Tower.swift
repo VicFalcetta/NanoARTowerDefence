@@ -19,6 +19,13 @@ class Tower: SCNNode {
     }
     
     func loadModel() {
-        
+        let nodeContainer = SCNNode()
+        guard let towerNode = SCNScene(named: "art.scnassets/tower_.scn") else { return }
+        for child in towerNode.rootNode.childNodes {
+            nodeContainer.addChildNode(child)
+        }
+        addChildNode(nodeContainer)
     }
+    
+    
 }

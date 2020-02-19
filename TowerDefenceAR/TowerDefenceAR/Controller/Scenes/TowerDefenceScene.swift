@@ -12,8 +12,10 @@ import ARKit
 class TowerDefenceScene: ARSCNView {
     let towerDelegate = TowerDefenceARViewDelegate()
     
-    func setupScene() {
-        
+    func config() {
+        configDelegate()
+        configScene()
+        automaticallyLight()
     }
     
     func configScene() {
@@ -23,7 +25,7 @@ class TowerDefenceScene: ARSCNView {
     
     func configDelegate() {
         delegate = towerDelegate
-        towerDelegate.initialSetup(towerARScene: self)
+        towerDelegate.config(towerARScene: self)
     }
     
     func debug() {
@@ -36,6 +38,13 @@ class TowerDefenceScene: ARSCNView {
         automaticallyUpdatesLighting = true
     }
     
+    func reset() {
+        session.pause()
+        if let configuration = session.configuration {
+            session.run(configuration, options: [.removeExistingAnchors, .resetTracking])
+        }
+    }
+    
     // MARK: - Addition of Nodes
     
     func addGhost() {
@@ -43,30 +52,20 @@ class TowerDefenceScene: ARSCNView {
         scene.rootNode.addChildNode(ghost)
     }
     
-    func removeGhost() {
+    func updateGhost(deathposition: SCNVector3) {
         if let ghost = scene.rootNode.childNode(withName: "ghost", recursively: false) {
             ghost.removeFromParentNode()
         }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let touch = touches.first,
-            let hitTestTouch = hitTest(touch.location(in: self),
-                                       types: .existingPlaneUsingExtent).first {
-            let local = touch.location(in: self)
-            let objTouched = hitTest(local, options: nil)
-            
-            //set Anchor
-            let anchor = ARAnchor(transform: hitTestTouch.worldTransform)
-            session.add(anchor: anchor)
-            if let ghostTouched = objTouched.first {
-                let ghost = ghostTouched.node
-                for i in 0...4 {
-                    
-                    
-                }
-            }
+        guard let currentTouchLocation = touches.first?.location(in: self),
+        let hitTestNode = hitTest(currentTouchLocation, options: nil).first?.node
+        else { return }
+        if let ghost = hitTestNode.parent?.parent as? Ghost, let parent = ghost.parent {
+            ghost.respawn(withParent: parent)
+            ImpactFeedback.shared.generateHeavy()
         }
+        
     }
-    
 }
