@@ -14,8 +14,8 @@ class TowerDefenceScene: ARSCNView {
     let towerDelegate = TowerDefenceARViewDelegate()
     
     func config() {
-        coach.setup(sceneView: self)
-        coach.addCoaching()
+        //coach.setup(sceneView: self)
+        //coach.addCoaching()
         configDelegate()
         configScene()
         automaticallyLight()

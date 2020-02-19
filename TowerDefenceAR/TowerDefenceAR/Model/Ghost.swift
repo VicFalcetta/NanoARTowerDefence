@@ -52,7 +52,7 @@ class Ghost: SCNNode {
     }
     
     func setupDeath(deathPosition: SCNVector3) {
-        let actionMovement = SCNAction.move(to: deathPosition, duration: 10)
+        let actionMovement = SCNAction.move(to: deathPosition, duration: 30)
         let addAction = SCNAction.run({ _ in
             if let parent = self.parent {
                 if let copy = self.copy() as? Ghost {
