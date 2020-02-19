@@ -10,9 +10,12 @@ import SceneKit
 import ARKit
 
 class TowerDefenceScene: ARSCNView {
+    let coach = Coaching()
     let towerDelegate = TowerDefenceARViewDelegate()
     
     func config() {
+        coach.setup(sceneView: self)
+        coach.addCoaching()
         configDelegate()
         configScene()
         automaticallyLight()
