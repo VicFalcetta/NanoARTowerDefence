@@ -16,6 +16,8 @@ class Score: UILabel {
     }
     
     func addCount() {
+        ScoreDefault.value += 1
+        compareHighScore()
         self.text = "SCORE \(getValue())"
     }
     
@@ -25,6 +27,12 @@ class Score: UILabel {
             return "0\(value)"
         } else {
             return String(value)
+        }
+    }
+    
+    func compareHighScore() {
+        if (HighScoreDefault.value < ScoreDefault.value) {
+            HighScoreDefault.value = ScoreDefault.value
         }
     }
 }

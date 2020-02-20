@@ -14,7 +14,7 @@ class TowerViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: TowerDefenceScene!
     @IBOutlet var scoreLabel: Score!
-    @IBOutlet var highScoreLabel: Score!
+    @IBOutlet var highScoreLabel: HighScore!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,12 +39,13 @@ class TowerViewController: UIViewController, ARSCNViewDelegate {
     }
     
     func configScene() {
-        sceneView.config()
+        sceneView.config(viewController: self)
         sceneView.debug()
     }
     
     func addScore() {
         scoreLabel.addCount()
+        highScoreLabel.updateValue()
     }
     
     @IBAction func reset(_ sender: Any) {

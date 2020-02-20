@@ -11,7 +11,7 @@ import UIKit
 class HighScore: UILabel {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        self.text = "HIGHSCORE \(getValue())"
+        updateValue()
     }
     
     func getValue() -> String {
@@ -21,5 +21,9 @@ class HighScore: UILabel {
         } else {
             return String(value)
         }
+    }
+    
+    func updateValue() {
+        self.text = "HIGHSCORE \(getValue())"
     }
 }

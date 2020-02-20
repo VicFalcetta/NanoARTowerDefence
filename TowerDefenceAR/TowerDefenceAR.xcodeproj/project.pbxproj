@@ -61,6 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2282714A23FF180400061B65 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2282714B23FF180F00061B65 /* TowerDefence */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2282714B23FF180F00061B65 /* TowerDefence */ = {
+			isa = PBXGroup;
+			children = (
+				2286422B23F736A300E0F4D5 /* TowerDefenceScene.swift */,
+			);
+			path = TowerDefence;
+			sourceTree = "<group>";
+		};
 		228641FA23F72D5D00E0F4D5 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +102,7 @@
 				2286422E23FB1BA500E0F4D5 /* Extensions */,
 				2286422023F7301900E0F4D5 /* Helpers */,
 				2286421B23F72F0F00E0F4D5 /* Model */,
+				2286422623F7341600E0F4D5 /* Scene */,
 				2286422323F7335200E0F4D5 /* Controller */,
 				2286422423F7339C00E0F4D5 /* View */,
 				2286421423F72D6100E0F4D5 /* Info.plist */,
@@ -109,7 +126,6 @@
 			children = (
 				2286422123F7302C00E0F4D5 /* ImpactFeedback.swift */,
 				2221278D23FDBFD60082C1C1 /* Coaching.swift */,
-				82262CDE23FF07B200D8A836 /* Music.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -117,8 +133,6 @@
 		2286422323F7335200E0F4D5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2286422823F7351D00E0F4D5 /* Components */,
-				2286422623F7341600E0F4D5 /* Scenes */,
 				8251E23C23FEF8B5006F3ED8 /* Controllers */,
 			);
 			path = Controller;
@@ -142,12 +156,13 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		2286422623F7341600E0F4D5 /* Scenes */ = {
+		2286422623F7341600E0F4D5 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				2286422B23F736A300E0F4D5 /* TowerDefenceScene.swift */,
+				2286422823F7351D00E0F4D5 /* Components */,
+				2282714A23FF180400061B65 /* Scenes */,
 			);
-			path = Scenes;
+			path = Scene;
 			sourceTree = "<group>";
 		};
 		2286422823F7351D00E0F4D5 /* Components */ = {
@@ -218,6 +233,7 @@
 		8251E24223FEFFEE006F3ED8 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				82262CDE23FF07B200D8A836 /* Music.swift */,
 				8251E24323FF0006006F3ED8 /* UserDefault.swift */,
 			);
 			path = Utils;

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,18 +16,18 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS" customClass="TowerDefenceScene" customModule="TowerDefenceAR" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="-5" width="414" height="906"/>
+                                <rect key="frame" x="-20.5" y="-40" width="455" height="986"/>
                             </arscnView>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="8qp-Lb-5S6" userLabel="HIGHSCORE">
-                                <rect key="frame" x="262.5" y="60" width="131.5" height="32"/>
+                                <rect key="frame" x="262.5" y="61" width="131.5" height="32"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YNK-cz-kVh">
-                                    <rect key="frame" x="0.0" y="0.0" width="131" height="32"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="131.5" height="32"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y6g-0d-HRg">
                                             <rect key="frame" x="0.0" y="0.0" width="131.5" height="32"/>
                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ASN-Aq-RjT">
-                                                <rect key="frame" x="0.0" y="0.0" width="131" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="131.5" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" text="HIGHSCORE: 00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gie-4W-n9u" userLabel="Messages label" customClass="HighScore" customModule="TowerDefenceAR" customModuleProvider="target">
@@ -67,15 +67,15 @@
                                 </userDefinedRuntimeAttributes>
                             </visualEffectView>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="1ha-Vs-Me0" userLabel="SCORE">
-                                <rect key="frame" x="20" y="60" width="99.5" height="32"/>
+                                <rect key="frame" x="20" y="61" width="99" height="32"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xIT-0u-nbV">
-                                    <rect key="frame" x="0.0" y="0.0" width="100" height="32"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="99" height="32"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SOl-xo-lB4">
                                             <rect key="frame" x="0.0" y="0.0" width="99.5" height="32"/>
                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ywY-VP-nNQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="99.5" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" text="SCORE: 00" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TG4-qb-dbU" userLabel="Messages label" customClass="Score" customModule="TowerDefenceAR" customModuleProvider="target">
@@ -180,18 +180,19 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="3n5-wo-aZo"/>
-                            <constraint firstItem="8qp-Lb-5S6" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" constant="60" id="5NQ-98-dd3"/>
-                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="topMargin" constant="-49" id="6o8-MJ-ZhK"/>
-                            <constraint firstItem="BrB-h1-WRS" firstAttribute="centerY" secondItem="Ci3-uz-D93" secondAttribute="centerY" id="9dN-rL-o7T"/>
-                            <constraint firstItem="1ha-Vs-Me0" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" constant="60" id="LhG-dR-gYe"/>
-                            <constraint firstItem="1ha-Vs-Me0" firstAttribute="leading" secondItem="U0K-SW-4ec" secondAttribute="leading" constant="20" id="S9r-pB-CGd"/>
-                            <constraint firstAttribute="trailing" secondItem="8qp-Lb-5S6" secondAttribute="trailing" constant="20" id="pcX-GP-F2N"/>
-                            <constraint firstItem="BrB-h1-WRS" firstAttribute="centerX" secondItem="Ci3-uz-D93" secondAttribute="centerX" id="ye8-81-Ipd"/>
+                            <constraint firstItem="1ha-Vs-Me0" firstAttribute="centerY" secondItem="fQZ-KI-GVf" secondAttribute="centerY" multiplier="0.17" id="33a-Hc-YL0"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="centerY" secondItem="fQZ-KI-GVf" secondAttribute="centerY" id="EEy-vE-O3s"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="height" secondItem="U0K-SW-4ec" secondAttribute="height" multiplier="1.1" id="H7b-xT-Gl8"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="centerX" secondItem="fQZ-KI-GVf" secondAttribute="centerX" id="I7K-Gh-cau"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="8qp-Lb-5S6" secondAttribute="trailing" constant="20" id="ZUd-te-DYr"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="width" secondItem="U0K-SW-4ec" secondAttribute="width" multiplier="1.1" id="cCy-Gq-b6W"/>
+                            <constraint firstItem="8qp-Lb-5S6" firstAttribute="centerY" secondItem="1ha-Vs-Me0" secondAttribute="centerY" id="p8F-y0-HC2"/>
+                            <constraint firstItem="1ha-Vs-Me0" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="20" id="wsy-J0-9EE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>
                     <connections>
+                        <outlet property="highScoreLabel" destination="gie-4W-n9u" id="UWQ-Jz-Jcd"/>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                         <outlet property="scoreLabel" destination="TG4-qb-dbU" id="p84-QM-hlJ"/>
                     </connections>

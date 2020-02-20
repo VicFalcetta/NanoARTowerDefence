@@ -12,10 +12,12 @@ import ARKit
 class TowerDefenceScene: ARSCNView {
     let coach = Coaching()
     let towerDelegate = TowerDefenceARViewDelegate()
+    weak var viewController: TowerViewController!
     
-    func config() {
-//        coach.setup(sceneView: self)
-//        coach.addCoaching()
+    func config(viewController: TowerViewController) {
+        self.viewController = viewController
+        coach.setup(sceneView: self)
+        coach.addCoaching()
         configDelegate()
         configScene()
         automaticallyLight()
@@ -76,6 +78,7 @@ class TowerDefenceScene: ARSCNView {
                 }
             }
             ghost.respawn(withParent: parent)
+            viewController.addScore()
             ImpactFeedback.shared.generateHeavy()
         }
         
