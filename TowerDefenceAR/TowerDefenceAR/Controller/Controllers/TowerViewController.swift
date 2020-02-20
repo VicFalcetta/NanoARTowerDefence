@@ -13,6 +13,8 @@ import ARKit
 class TowerViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: TowerDefenceScene!
+    @IBOutlet var scoreLabel: Score!
+    @IBOutlet var highScoreLabel: Score!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +42,11 @@ class TowerViewController: UIViewController, ARSCNViewDelegate {
         sceneView.config()
         sceneView.debug()
     }
+    
+    func addScore() {
+        scoreLabel.addCount()
+    }
+    
     @IBAction func reset(_ sender: Any) {
         sceneView.reset()
     }
