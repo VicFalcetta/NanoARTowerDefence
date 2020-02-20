@@ -106,7 +106,7 @@
 			children = (
 				2286422823F7351D00E0F4D5 /* Components */,
 				2286422623F7341600E0F4D5 /* Scenes */,
-				2286420A23F72D5D00E0F4D5 /* TowerViewController.swift */,
+				8251E23C23FEF8B5006F3ED8 /* Controllers */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -139,7 +139,7 @@
 		2286422823F7351D00E0F4D5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				2286422923F735DA00E0F4D5 /* TowerDefenceARViewDelegate.swift */,
+				8251E23D23FEF8C1006F3ED8 /* TowerDefence */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -150,6 +150,22 @@
 				2286422F23FB1BC800E0F4D5 /* SCNReferenceNode.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8251E23C23FEF8B5006F3ED8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2286420A23F72D5D00E0F4D5 /* TowerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8251E23D23FEF8C1006F3ED8 /* TowerDefence */ = {
+			isa = PBXGroup;
+			children = (
+				2286422923F735DA00E0F4D5 /* TowerDefenceARViewDelegate.swift */,
+			);
+			path = TowerDefence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
