@@ -21,7 +21,8 @@
 		2286422C23F736A300E0F4D5 /* TowerDefenceScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2286422B23F736A300E0F4D5 /* TowerDefenceScene.swift */; };
 		2286423023FB1BC800E0F4D5 /* SCNReferenceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2286422F23FB1BC800E0F4D5 /* SCNReferenceNode.swift */; };
 		82262CDF23FF07B200D8A836 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82262CDE23FF07B200D8A836 /* Music.swift */; };
-		82262CE323FF08C500D8A836 /* ghost.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 82262CE223FF08C500D8A836 /* ghost.mp3 */; };
+		82262CE623FF1C9400D8A836 /* ghost_scream.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 82262CE423FF1C9400D8A836 /* ghost_scream.mp3 */; };
+		82262CE723FF1C9400D8A836 /* ambient_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 82262CE523FF1C9400D8A836 /* ambient_sound.mp3 */; };
 		8251E24123FEF92A006F3ED8 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251E24023FEF92A006F3ED8 /* Score.swift */; };
 		8251E24423FF0006006F3ED8 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251E24323FF0006006F3ED8 /* UserDefault.swift */; };
 		8251E24623FF0315006F3ED8 /* HighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251E24523FF0315006F3ED8 /* HighScore.swift */; };
@@ -44,7 +45,8 @@
 		2286422B23F736A300E0F4D5 /* TowerDefenceScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowerDefenceScene.swift; sourceTree = "<group>"; };
 		2286422F23FB1BC800E0F4D5 /* SCNReferenceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNReferenceNode.swift; sourceTree = "<group>"; };
 		82262CDE23FF07B200D8A836 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
-		82262CE223FF08C500D8A836 /* ghost.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ghost.mp3; sourceTree = "<group>"; };
+		82262CE423FF1C9400D8A836 /* ghost_scream.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ghost_scream.mp3; sourceTree = "<group>"; };
+		82262CE523FF1C9400D8A836 /* ambient_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ambient_sound.mp3; sourceTree = "<group>"; };
 		8251E24023FEF92A006F3ED8 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		8251E24323FF0006006F3ED8 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		8251E24523FF0315006F3ED8 /* HighScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScore.swift; sourceTree = "<group>"; };
@@ -192,7 +194,8 @@
 		82262CE123FF08B600D8A836 /* Music */ = {
 			isa = PBXGroup;
 			children = (
-				82262CE223FF08C500D8A836 /* ghost.mp3 */,
+				82262CE523FF1C9400D8A836 /* ambient_sound.mp3 */,
+				82262CE423FF1C9400D8A836 /* ghost_scream.mp3 */,
 			);
 			path = Music;
 			sourceTree = "<group>";
@@ -298,10 +301,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2286420923F72D5D00E0F4D5 /* art.scnassets in Resources */,
-				82262CE323FF08C500D8A836 /* ghost.mp3 in Resources */,
+				82262CE723FF1C9400D8A836 /* ambient_sound.mp3 in Resources */,
 				2286421323F72D6100E0F4D5 /* LaunchScreen.storyboard in Resources */,
 				2286421023F72D6100E0F4D5 /* Assets.xcassets in Resources */,
 				2286420E23F72D5D00E0F4D5 /* Main.storyboard in Resources */,
+				82262CE623FF1C9400D8A836 /* ghost_scream.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,7 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4LXC4A87QZ;
+				DEVELOPMENT_TEAM = CTAFH43K36;
 				INFOPLIST_FILE = TowerDefenceAR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -487,7 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4LXC4A87QZ;
+				DEVELOPMENT_TEAM = CTAFH43K36;
 				INFOPLIST_FILE = TowerDefenceAR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

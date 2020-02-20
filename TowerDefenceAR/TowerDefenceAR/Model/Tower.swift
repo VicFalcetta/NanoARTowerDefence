@@ -9,15 +9,12 @@
 import SceneKit
 
 class Tower: SCNNode {
-    
     override init() {
         super.init()
     }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
     func loadModel() {
         let nodeContainer = SCNNode()
         guard let towerNode = SCNScene(named: "art.scnassets/tower_.scn") else { return }
@@ -26,6 +23,4 @@ class Tower: SCNNode {
         }
         addChildNode(nodeContainer)
     }
-    
-    
 }
