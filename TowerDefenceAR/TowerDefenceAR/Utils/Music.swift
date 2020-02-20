@@ -8,23 +8,29 @@
 
 import AVFoundation
 
-enum MusicLoadResponse: Error {
-    case success(audio: AVAudioPlayer)
-    case error(description: String)
-}
-
 struct MusicHandler {
-    static func get(withName name: String, withCompletion completion: (MusicLoadResponse) -> Void) {
+    static var ambient_sound: AVAudioPlayer?
+    static var ghost_scream: AVAudioPlayer?
+    
+    static func loadAmbientSound() {
+        MusicHandler.ambient_sound = MusicHandler.load(withName: "ambient_sound.mp3")
+        MusicHandler.ambient_sound?.play()
+    }
+    static func loadGhostScream() {
+        MusicHandler.ghost_scream = MusicHandler.load(withName: "ghost_scream.mp3")
+    }
+    static func load(withName name: String) -> AVAudioPlayer? {
         guard let path = Bundle.main.path(forResource: name, ofType: nil) else {
-            completion(MusicLoadResponse.error(description: "Music not found"))
-            return
+            NSLog("Music not found")
+            return nil
         }
         let url = URL(fileURLWithPath: path)
         do {
             let audio = try AVAudioPlayer(contentsOf: url)
-            completion(MusicLoadResponse.success(audio: audio))
+            return audio
         } catch {
-            completion(MusicLoadResponse.error(description: "Music can't convert"))
+            NSLog("Music can't convert")
+            return nil
         }
     }
 }

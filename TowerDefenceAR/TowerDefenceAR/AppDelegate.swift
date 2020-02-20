@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     func setup() {
         ScoreDefault.value = 0
+        MusicHandler.loadAmbientSound()
+        MusicHandler.loadGhostScream()
     }
     func applicationWillResignActive(_ application: UIApplication) { }
     func applicationDidEnterBackground(_ application: UIApplication) { }
