@@ -45,6 +45,7 @@ class TowerDefenceScene: ARSCNView {
         session.pause()
         if let configuration = session.configuration {
             session.run(configuration, options: [.removeExistingAnchors, .resetTracking])
+            towerDelegate.towerExists = false
         }
     }
     

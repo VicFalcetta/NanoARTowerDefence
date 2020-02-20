@@ -11,6 +11,7 @@ import ARKit
 
 class TowerDefenceARViewDelegate: NSObject, ARSCNViewDelegate {
     weak var towerARScene: TowerDefenceScene?
+    var towerExists: Bool = false
     
     func config(towerARScene: TowerDefenceScene) {
         self.towerARScene = towerARScene
@@ -19,7 +20,7 @@ class TowerDefenceARViewDelegate: NSObject, ARSCNViewDelegate {
     //MARK: - Funções Render
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         guard let towerAnchor = anchor as? ARPlaneAnchor else { return }
-        addTower(towerAnchor: towerAnchor, node: node)
+        addTower(towerAnchor: towerAnchor, node: node, towerExists: towerExists)
     }
     
 //    func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
@@ -27,8 +28,7 @@ class TowerDefenceARViewDelegate: NSObject, ARSCNViewDelegate {
 //    }
     
     //MARK: - Add Modelos
-    func addTower(towerAnchor: ARPlaneAnchor, node: SCNNode) {
-        var towerExists: Bool = false
+    func addTower(towerAnchor: ARPlaneAnchor, node: SCNNode, towerExists: Bool) {
         if (towerExists == false) {
             let tower = Tower()
             tower.loadModel()
@@ -40,7 +40,7 @@ class TowerDefenceARViewDelegate: NSObject, ARSCNViewDelegate {
             ghost.setupDeath(deathPosition: SCNVector3(posX, posY, posZ))
             node.addChildNode(ghost)
             node.addChildNode(tower)
-            towerExists = true
+            self.towerExists = true
         }
     }
     //Atualizar isso para usar o modelo da torre
