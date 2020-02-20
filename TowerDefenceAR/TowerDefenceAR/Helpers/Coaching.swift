@@ -9,9 +9,9 @@ import ARKit
 
 class Coaching: ARCoachingOverlayView, ARCoachingOverlayViewDelegate {
     
-    private weak var sceneView: ARSCNView!
+    private weak var sceneView: TowerDefenceScene!
     
-    func setup(sceneView: ARSCNView) {
+    func setup(sceneView: TowerDefenceScene) {
         self.sceneView = sceneView
     }
     
@@ -58,12 +58,12 @@ class Coaching: ARCoachingOverlayView, ARCoachingOverlayViewDelegate {
     // MARK: - Callbacks
     /// - Tag: Coaching Activate
     func coachingOverlayViewWillActivate(_ coachingOverlayView: ARCoachingOverlayView) {
-    
+        sceneView.disableScreen()
     }
 
     /// - Tag: Coaching Deactivate
     func coachingOverlayViewDidDeactivate(_ coachingOverlayView: ARCoachingOverlayView) {
-        
+        sceneView.enableScreen()
     }
 
     /// - Tag: Coaching SessionReset

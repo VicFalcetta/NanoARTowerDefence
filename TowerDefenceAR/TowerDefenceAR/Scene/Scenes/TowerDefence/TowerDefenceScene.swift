@@ -16,11 +16,15 @@ class TowerDefenceScene: ARSCNView {
     
     func config(viewController: TowerViewController) {
         self.viewController = viewController
-        coach.setup(sceneView: self)
-        coach.addCoaching()
         configDelegate()
         configScene()
         automaticallyLight()
+        setupCoaching()
+    }
+    
+    func setupCoaching() {
+        coach.setup(sceneView: self)
+        coach.addCoaching()
     }
     
     func configScene() {
@@ -41,6 +45,14 @@ class TowerDefenceScene: ARSCNView {
     func automaticallyLight() {
         autoenablesDefaultLighting = true
         automaticallyUpdatesLighting = true
+    }
+    
+    func disableScreen() {
+        viewController.disable()
+    }
+    
+    func enableScreen() {
+        viewController.enable()
     }
     
     func reset() {

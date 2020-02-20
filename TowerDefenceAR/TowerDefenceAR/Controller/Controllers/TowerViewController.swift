@@ -15,6 +15,9 @@ class TowerViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet var sceneView: TowerDefenceScene!
     @IBOutlet var scoreLabel: Score!
     @IBOutlet var highScoreLabel: HighScore!
+    @IBOutlet weak var scoreView: UIVisualEffectView!
+    @IBOutlet weak var highScoreView: UIVisualEffectView!
+    @IBOutlet weak var messageView: UIVisualEffectView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +49,17 @@ class TowerViewController: UIViewController, ARSCNViewDelegate {
     func addScore() {
         scoreLabel.addCount()
         highScoreLabel.updateValue()
+    }
+    
+    func disable() {
+        scoreView.isHidden = true
+        highScoreView.isHidden = true
+        messageView.isHidden = true
+    }
+    
+    func enable() {
+        scoreView.isHidden = false
+        highScoreView.isHidden = false
     }
     
     @IBAction func reset(_ sender: Any) {
