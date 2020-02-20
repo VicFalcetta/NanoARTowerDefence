@@ -27,6 +27,8 @@ class Ghost: SCNNode {
         for child in nodeGhost.rootNode.childNodes {
             nodeContainer.addChildNode(child)
         }
+        nodeContainer.pivot = SCNMatrix4Rotate(nodeContainer.pivot, .pi, 0, 1, 0)
+//        nodeContainer.eulerAngles.y = .pi/2
         addChildNode(nodeContainer)
 
         //Adicionando com a extension
@@ -42,17 +44,23 @@ class Ghost: SCNNode {
     
     func setupPos() {
         let maximo: Float = 5.0
-        let minimo: Float = 0.0
+        let minimo: Float = -5.0
         
         let posX = Float.random(in: minimo...maximo)
-        let posY = Float.random(in: minimo...maximo)
+        let posY = Float.random(in: 0...maximo)
         let posZ = Float.random(in: minimo...maximo)
         
         position = SCNVector3(posX, posY, posZ)
     }
     
+    func lookAt(lookTarget: SCNNode) {
+        let lookAtConstraints = SCNLookAtConstraint(target: lookTarget)
+        constraints = [lookAtConstraints]
+        
+    }
+    
     func setupDeath(deathPosition: SCNVector3) {
-        let actionMovement = SCNAction.move(to: deathPosition, duration: 30)
+        let actionMovement = SCNAction.move(to: deathPosition, duration: 15)
         let addAction = SCNAction.run({ _ in
             if let parent = self.parent {
                 if let copy = self.copy() as? Ghost {
@@ -68,6 +76,7 @@ class Ghost: SCNNode {
     func respawn(withParent parent: SCNNode) {
         removeAllActions()
         setupPos()
+        lookAt(lookTarget: parent)
         setupDeath(deathPosition: parent.position)
         parent.addChildNode(self)
     }

@@ -14,8 +14,8 @@ class TowerDefenceScene: ARSCNView {
     let towerDelegate = TowerDefenceARViewDelegate()
     
     func config() {
-        //coach.setup(sceneView: self)
-        //coach.addCoaching()
+//        coach.setup(sceneView: self)
+//        coach.addCoaching()
         configDelegate()
         configScene()
         automaticallyLight()
@@ -51,8 +51,9 @@ class TowerDefenceScene: ARSCNView {
     
     // MARK: - Addition of Nodes
     
-    func addGhost(node: SCNNode) {
+    func addGhost(withParent node: SCNNode) {
         let ghost = Ghost()
+        ghost.lookAt(lookTarget: node)
         ghost.setupDeath(deathPosition: node.position)
         node.addChildNode(ghost)
     }
@@ -68,6 +69,12 @@ class TowerDefenceScene: ARSCNView {
         let hitTestNode = hitTest(currentTouchLocation, options: nil).first?.node
         else { return }
         if let ghost = hitTestNode.parent?.parent as? Ghost, let parent = ghost.parent {
+            let numGhost = Int.random(in: 1...3)
+            for _ in 0...numGhost {
+                if let copy = ghost.copy() as? Ghost {
+                    copy.respawn(withParent: parent)
+                }
+            }
             ghost.respawn(withParent: parent)
             ImpactFeedback.shared.generateHeavy()
         }

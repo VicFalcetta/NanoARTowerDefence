@@ -37,7 +37,7 @@ class TowerDefenceARViewDelegate: NSObject, ARSCNViewDelegate {
             let posZ = CGFloat(towerAnchor.center.z)
             tower.position = SCNVector3(posX, posY, posZ)
             
-            towerARScene?.addGhost(node: tower)
+            towerARScene?.addGhost(withParent: tower)
             node.addChildNode(tower)
             self.towerExists = true
         }
