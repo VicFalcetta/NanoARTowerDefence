@@ -19,15 +19,15 @@
                                 <rect key="frame" x="0.0" y="-5" width="414" height="906"/>
                             </arscnView>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="8qp-Lb-5S6" userLabel="HIGHSCORE">
-                                <rect key="frame" x="262.5" y="60" width="131.5" height="32"/>
+                                <rect key="frame" x="263" y="60" width="131" height="32"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YNK-cz-kVh">
-                                    <rect key="frame" x="0.0" y="0.0" width="131.5" height="32"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="131" height="32"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y6g-0d-HRg">
-                                            <rect key="frame" x="0.0" y="0.0" width="131.5" height="32"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="131" height="32"/>
                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ASN-Aq-RjT">
-                                                <rect key="frame" x="0.0" y="0.0" width="131.5" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="131" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" text="HIGHSCORE: 00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gie-4W-n9u" userLabel="Messages label">
@@ -67,15 +67,15 @@
                                 </userDefinedRuntimeAttributes>
                             </visualEffectView>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="1ha-Vs-Me0" userLabel="SCORE">
-                                <rect key="frame" x="20" y="60" width="99" height="32"/>
+                                <rect key="frame" x="20" y="60" width="98.5" height="32"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xIT-0u-nbV">
                                     <rect key="frame" x="0.0" y="0.0" width="99" height="32"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SOl-xo-lB4">
-                                            <rect key="frame" x="0.0" y="0.0" width="99.5" height="32"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="99" height="32"/>
                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ywY-VP-nNQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="99.5" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="99" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" text="SCORE: 00" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TG4-qb-dbU" userLabel="Messages label">
@@ -114,7 +114,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </visualEffectView>
-                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="100" id="Ci3-uz-D93" userLabel="MENSSAGE">
+                            <visualEffectView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="100" id="Ci3-uz-D93" userLabel="MENSSAGE">
                                 <rect key="frame" x="76" y="361" width="262" height="174"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8Pi-lN-VJt">
@@ -148,8 +148,8 @@
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="oIN-zc-eWc" firstAttribute="centerX" secondItem="c54-fH-RVo" secondAttribute="centerX" id="051-Dj-2qf"/>
-                                                    <constraint firstItem="oIN-zc-eWc" firstAttribute="leading" secondItem="c54-fH-RVo" secondAttribute="leading" constant="16" id="4yK-Dv-qPh"/>
-                                                    <constraint firstAttribute="trailing" secondItem="oIN-zc-eWc" secondAttribute="trailing" constant="16" id="7ox-Vg-E2A"/>
+                                                    <constraint firstItem="oIN-zc-eWc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c54-fH-RVo" secondAttribute="leading" id="4yK-Dv-qPh"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oIN-zc-eWc" secondAttribute="trailing" constant="16" id="7ox-Vg-E2A"/>
                                                     <constraint firstItem="oIN-zc-eWc" firstAttribute="bottom" secondItem="13q-jd-gs6" secondAttribute="bottom" id="RQx-OO-aBA"/>
                                                     <constraint firstItem="oIN-zc-eWc" firstAttribute="centerX" secondItem="BIU-JC-DuI" secondAttribute="centerX" id="UiN-Ql-PmP"/>
                                                     <constraint firstItem="oIN-zc-eWc" firstAttribute="centerX" secondItem="13q-jd-gs6" secondAttribute="centerX" id="tcL-eI-ZsV"/>
@@ -180,16 +180,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="3n5-wo-aZo"/>
                             <constraint firstItem="8qp-Lb-5S6" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" constant="60" id="5NQ-98-dd3"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="topMargin" constant="-49" id="6o8-MJ-ZhK"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="centerY" secondItem="Ci3-uz-D93" secondAttribute="centerY" id="9dN-rL-o7T"/>
-                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
-                            <constraint firstItem="Ci3-uz-D93" firstAttribute="centerX" secondItem="BrB-h1-WRS" secondAttribute="centerX" id="JAD-sp-zXV"/>
                             <constraint firstItem="1ha-Vs-Me0" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" constant="60" id="LhG-dR-gYe"/>
                             <constraint firstItem="1ha-Vs-Me0" firstAttribute="leading" secondItem="U0K-SW-4ec" secondAttribute="leading" constant="20" id="S9r-pB-CGd"/>
-                            <constraint firstItem="Ci3-uz-D93" firstAttribute="width" secondItem="BrB-h1-WRS" secondAttribute="width" multiplier="0.63285" id="VQK-As-cn3"/>
-                            <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
                             <constraint firstAttribute="trailing" secondItem="8qp-Lb-5S6" secondAttribute="trailing" constant="20" id="pcX-GP-F2N"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="centerX" secondItem="Ci3-uz-D93" secondAttribute="centerX" id="ye8-81-Ipd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>

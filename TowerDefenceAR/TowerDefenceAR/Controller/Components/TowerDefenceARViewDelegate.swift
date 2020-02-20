@@ -36,9 +36,8 @@ class TowerDefenceARViewDelegate: NSObject, ARSCNViewDelegate {
             let posY = CGFloat(towerAnchor.center.y)
             let posZ = CGFloat(towerAnchor.center.z)
             tower.position = SCNVector3(posX, posY, posZ)
-            let ghost = Ghost()
-            ghost.setupDeath(deathPosition: SCNVector3(posX, posY, posZ))
-            node.addChildNode(ghost)
+            
+            towerARScene?.addGhost(node: tower)
             node.addChildNode(tower)
             self.towerExists = true
         }

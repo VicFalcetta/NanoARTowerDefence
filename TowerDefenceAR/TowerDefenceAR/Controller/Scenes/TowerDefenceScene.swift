@@ -51,9 +51,10 @@ class TowerDefenceScene: ARSCNView {
     
     // MARK: - Addition of Nodes
     
-    func addGhost() {
+    func addGhost(node: SCNNode) {
         let ghost = Ghost()
-        scene.rootNode.addChildNode(ghost)
+        ghost.setupDeath(deathPosition: node.position)
+        node.addChildNode(ghost)
     }
     
     func updateGhost(deathposition: SCNVector3) {
