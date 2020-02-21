@@ -65,6 +65,7 @@ class Ghost: SCNNode {
             if let parent = self.parent {
                 if let copy = self.copy() as? Ghost {
                     copy.respawn(withParent: parent)
+                    EventManager.shared.trigger(eventName: "demage")
                 }
             }
         })

@@ -24,6 +24,6 @@ class HighScore: UILabel {
     }
     
     func updateValue() {
-        self.text = "HIGHSCORE \(getValue())"
+        self.text = "HIGHSCORE: \(getValue())"
     }
 }

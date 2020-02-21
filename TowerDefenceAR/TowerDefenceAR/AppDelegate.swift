@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     func setup() {
         ScoreDefault.value = 0
+        LifesDefault.value = 3
         MusicHandler.loadAmbientSound()
         MusicHandler.loadGhostScream()
     }

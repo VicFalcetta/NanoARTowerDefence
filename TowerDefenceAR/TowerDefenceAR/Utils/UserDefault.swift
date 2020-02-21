@@ -29,3 +29,14 @@ struct HighScoreDefault {
         }
     }
 }
+struct LifesDefault {
+    static let key = "lifes"
+    static var value: Int {
+        get {
+            return UserDefaults.standard.integer(forKey: key)
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: key)
+        }
+    }
+}

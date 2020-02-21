@@ -19,15 +19,15 @@
                                 <rect key="frame" x="-28" y="-31.333333333333314" width="431" height="884.66666666666652"/>
                             </arscnView>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="8qp-Lb-5S6" userLabel="HIGHSCORE">
-                                <rect key="frame" x="223.33333333333337" y="53.999999999999993" width="131.66666666666663" height="31.666666666666664"/>
+                                <rect key="frame" x="222.66666666666663" y="53.999999999999993" width="132.33333333333337" height="31.666666666666664"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YNK-cz-kVh">
-                                    <rect key="frame" x="0.0" y="0.0" width="131.66666666666663" height="31.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="132.33333333333337" height="31.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y6g-0d-HRg">
-                                            <rect key="frame" x="0.0" y="0.0" width="131.33333333333334" height="31.666666666666668"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="132" height="32"/>
                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ASN-Aq-RjT">
-                                                <rect key="frame" x="0.0" y="0.0" width="131.33333333333334" height="31.666666666666668"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="132" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" text="HIGHSCORE: 00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gie-4W-n9u" userLabel="Messages label" customClass="HighScore" customModule="TowerDefenceAR" customModuleProvider="target">
@@ -67,15 +67,15 @@
                                 </userDefinedRuntimeAttributes>
                             </visualEffectView>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="1ha-Vs-Me0" userLabel="SCORE">
-                                <rect key="frame" x="19.999999999999993" y="53.999999999999993" width="99.333333333333314" height="31.666666666666664"/>
+                                <rect key="frame" x="20" y="53.999999999999993" width="99" height="31.666666666666664"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xIT-0u-nbV">
-                                    <rect key="frame" x="0.0" y="0.0" width="99.333333333333314" height="31.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="99" height="31.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SOl-xo-lB4">
-                                            <rect key="frame" x="0.0" y="0.0" width="99.333333333333329" height="31.666666666666668"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="99" height="32"/>
                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ywY-VP-nNQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="99.333333333333329" height="31.666666666666668"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="99" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" text="SCORE: 00" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TG4-qb-dbU" userLabel="Messages label" customClass="Score" customModule="TowerDefenceAR" customModuleProvider="target">
@@ -114,38 +114,89 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </visualEffectView>
-                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="44O-fB-cVR" userLabel="MENSSAGE">
-                                <rect key="frame" x="56.333333333333343" y="318.33333333333331" width="262.33333333333326" height="185.66666666666669"/>
+                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="fLs-3m-kw0" userLabel="LIFES">
+                                <rect key="frame" x="20.000000000000007" y="736.33333333333337" width="89.666666666666686" height="31.666666666666629"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="f4r-dE-ab7">
+                                    <rect key="frame" x="0.0" y="0.0" width="89.666666666666686" height="31.666666666666629"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xXG-uq-02q">
+                                            <rect key="frame" x="0.0" y="0.0" width="89.666666666666671" height="31.666666666666668"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sWA-BX-Spe">
+                                                <rect key="frame" x="0.0" y="0.0" width="89.666666666666671" height="31.666666666666668"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" text="LIFES: 00" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8k-4M-nzr" userLabel="Messages label" customClass="Lifes" customModule="TowerDefenceAR" customModuleProvider="target">
+                                                        <rect key="frame" x="15.999999999999996" y="7.9999999999999991" width="57.666666666666657" height="15.666666666666664"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                        <nil key="textColor"/>
+                                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <size key="shadowOffset" width="1" height="1"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="o8k-4M-nzr" firstAttribute="trailing" secondItem="sWA-BX-Spe" secondAttribute="trailing" constant="-16" id="AUi-2E-edH"/>
+                                                    <constraint firstItem="o8k-4M-nzr" firstAttribute="leading" secondItem="sWA-BX-Spe" secondAttribute="leading" constant="16" id="NFh-2R-2AI"/>
+                                                    <constraint firstItem="o8k-4M-nzr" firstAttribute="top" secondItem="sWA-BX-Spe" secondAttribute="top" constant="8" id="PI5-sg-Bzo"/>
+                                                    <constraint firstItem="o8k-4M-nzr" firstAttribute="centerY" secondItem="sWA-BX-Spe" secondAttribute="centerY" id="rYc-Ag-Ymy"/>
+                                                </constraints>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="extraLight"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="xXG-uq-02q" secondAttribute="trailing" id="0gO-qK-sG7"/>
+                                        <constraint firstItem="xXG-uq-02q" firstAttribute="leading" secondItem="f4r-dE-ab7" secondAttribute="leading" id="Snn-Go-P9b"/>
+                                        <constraint firstItem="xXG-uq-02q" firstAttribute="top" secondItem="f4r-dE-ab7" secondAttribute="top" id="nql-5A-kdh"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="o8k-4M-nzr" secondAttribute="bottom" constant="8" id="Vaj-qP-o6q"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </visualEffectView>
+                            <visualEffectView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="44O-fB-cVR" userLabel="MENSSAGE">
+                                <rect key="frame" x="56.333333333333343" y="318" width="262.33333333333326" height="186"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fSr-gu-CSw">
-                                    <rect key="frame" x="0.0" y="0.0" width="262.33333333333326" height="185.66666666666669"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="262.33333333333326" height="186"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y8B-tv-LbE">
-                                            <rect key="frame" x="0.0" y="0.0" width="262.33333333333331" height="185.66666666666666"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="263" height="186"/>
                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gOD-rl-gqt">
-                                                <rect key="frame" x="0.0" y="0.0" width="262.33333333333331" height="185.66666666666666"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="263" height="186"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" text="INSTRUCTIONS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxn-k9-no3" userLabel="Title">
-                                                        <rect key="frame" x="15.999999999999986" y="20" width="230.33333333333331" height="24"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" text="INSTRUCTIONS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxn-k9-no3" userLabel="Title" customClass="TitleInstruction" customModule="TowerDefenceAR" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="20" width="231" height="24"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                         <nil key="textColor"/>
                                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <size key="shadowOffset" width="1" height="1"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" text="kasmdlkmaskldmlkasmlkdmalksmdlkamslkdmalskmdlkasmdlkmaslkdmlaksmdlkasmdklasmd" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7L-Ir-vlB" userLabel="Messages label">
-                                                        <rect key="frame" x="15.999999999999986" y="60" width="230.33333333333331" height="51.666666666666657"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" text="kasmdlkmaskldmlkasmlkdmalksmdlkamslkdmalskmdlkasmdlkmaslkdmlaksmdlkasmdklasmd" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7L-Ir-vlB" userLabel="Messages label" customClass="MessageInstruction" customModule="TowerDefenceAR" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="60" width="231" height="51.666666666666657"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <nil key="textColor"/>
                                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <size key="shadowOffset" width="1" height="1"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzq-xf-Jxu">
-                                                        <rect key="frame" x="15.999999999999986" y="135.66666666666669" width="230.33333333333331" height="30"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzq-xf-Jxu" customClass="ButtonInstruction" customModule="TowerDefenceAR" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="135.66666666666669" width="231" height="30"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="PLAY"/>
+                                                        <connections>
+                                                            <action selector="reset:" destination="BV1-FR-VrT" eventType="touchUpInside" id="VDK-iO-uRa"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -190,16 +241,20 @@
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="centerX" secondItem="fQZ-KI-GVf" secondAttribute="centerX" id="Qbl-B6-BI2"/>
                             <constraint firstItem="44O-fB-cVR" firstAttribute="width" secondItem="fQZ-KI-GVf" secondAttribute="width" multiplier="0.7" id="RnH-2e-Rq7"/>
                             <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="8qp-Lb-5S6" secondAttribute="trailing" constant="20" id="ZUd-te-DYr"/>
+                            <constraint firstItem="fLs-3m-kw0" firstAttribute="centerY" secondItem="fQZ-KI-GVf" secondAttribute="centerY" multiplier="1.83" id="eyk-Fz-IPW"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="height" secondItem="fQZ-KI-GVf" secondAttribute="height" multiplier="1.20538" id="j6U-JL-GUA"/>
                             <constraint firstItem="8qp-Lb-5S6" firstAttribute="centerY" secondItem="1ha-Vs-Me0" secondAttribute="centerY" id="p8F-y0-HC2"/>
                             <constraint firstItem="44O-fB-cVR" firstAttribute="centerX" secondItem="fQZ-KI-GVf" secondAttribute="centerX" id="pGg-rT-f2w"/>
                             <constraint firstItem="1ha-Vs-Me0" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="20" id="wsy-J0-9EE"/>
+                            <constraint firstItem="fLs-3m-kw0" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="20" id="xH2-ep-DaI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>
                     <connections>
                         <outlet property="highScoreLabel" destination="gie-4W-n9u" id="UWQ-Jz-Jcd"/>
                         <outlet property="highScoreView" destination="8qp-Lb-5S6" id="b5t-jt-0uk"/>
+                        <outlet property="lifesLabel" destination="o8k-4M-nzr" id="da6-Wa-Xaq"/>
+                        <outlet property="lifesView" destination="fLs-3m-kw0" id="vVS-Xj-ZjA"/>
                         <outlet property="messageView" destination="44O-fB-cVR" id="XOf-LK-fZ2"/>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                         <outlet property="scoreLabel" destination="TG4-qb-dbU" id="p84-QM-hlJ"/>

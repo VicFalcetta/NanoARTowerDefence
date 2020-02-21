@@ -26,6 +26,9 @@
 		8251E24123FEF92A006F3ED8 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251E24023FEF92A006F3ED8 /* Score.swift */; };
 		8251E24423FF0006006F3ED8 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251E24323FF0006006F3ED8 /* UserDefault.swift */; };
 		8251E24623FF0315006F3ED8 /* HighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251E24523FF0315006F3ED8 /* HighScore.swift */; };
+		82820C3F23FF2D3900157142 /* Instructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82820C3E23FF2D3900157142 /* Instructions.swift */; };
+		82820C4123FF2E3500157142 /* Lifes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82820C4023FF2E3500157142 /* Lifes.swift */; };
+		82820C4323FF329500157142 /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82820C4223FF329500157142 /* EventManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		8251E24023FEF92A006F3ED8 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		8251E24323FF0006006F3ED8 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		8251E24523FF0315006F3ED8 /* HighScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScore.swift; sourceTree = "<group>"; };
+		82820C3E23FF2D3900157142 /* Instructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructions.swift; sourceTree = "<group>"; };
+		82820C4023FF2E3500157142 /* Lifes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lifes.swift; sourceTree = "<group>"; };
+		82820C4223FF329500157142 /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,7 @@
 			children = (
 				2286422123F7302C00E0F4D5 /* ImpactFeedback.swift */,
 				2221278D23FDBFD60082C1C1 /* Coaching.swift */,
+				82820C4223FF329500157142 /* EventManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -229,6 +236,8 @@
 			children = (
 				8251E24023FEF92A006F3ED8 /* Score.swift */,
 				8251E24523FF0315006F3ED8 /* HighScore.swift */,
+				82820C3E23FF2D3900157142 /* Instructions.swift */,
+				82820C4023FF2E3500157142 /* Lifes.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -316,14 +325,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82820C3F23FF2D3900157142 /* Instructions.swift in Sources */,
 				2221278E23FDBFD60082C1C1 /* Coaching.swift in Sources */,
 				82262CDF23FF07B200D8A836 /* Music.swift in Sources */,
+				82820C4123FF2E3500157142 /* Lifes.swift in Sources */,
 				2286422A23F735DA00E0F4D5 /* TowerDefenceARViewDelegate.swift in Sources */,
 				2286421D23F72F2300E0F4D5 /* Tower.swift in Sources */,
 				8251E24423FF0006006F3ED8 /* UserDefault.swift in Sources */,
 				2286423023FB1BC800E0F4D5 /* SCNReferenceNode.swift in Sources */,
 				8251E24123FEF92A006F3ED8 /* Score.swift in Sources */,
 				2286420B23F72D5D00E0F4D5 /* TowerViewController.swift in Sources */,
+				82820C4323FF329500157142 /* EventManager.swift in Sources */,
 				2286420723F72D5D00E0F4D5 /* AppDelegate.swift in Sources */,
 				2286422223F7302C00E0F4D5 /* ImpactFeedback.swift in Sources */,
 				2286422C23F736A300E0F4D5 /* TowerDefenceScene.swift in Sources */,

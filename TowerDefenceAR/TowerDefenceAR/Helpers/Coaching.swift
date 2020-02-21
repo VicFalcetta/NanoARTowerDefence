@@ -59,11 +59,13 @@ class Coaching: ARCoachingOverlayView, ARCoachingOverlayViewDelegate {
     /// - Tag: Coaching Activate
     func coachingOverlayViewWillActivate(_ coachingOverlayView: ARCoachingOverlayView) {
         sceneView.disableScreen()
+        MusicHandler.ambient_sound?.pause()
     }
 
     /// - Tag: Coaching Deactivate
     func coachingOverlayViewDidDeactivate(_ coachingOverlayView: ARCoachingOverlayView) {
         sceneView.enableScreen()
+        MusicHandler.ambient_sound?.play()
     }
 
     /// - Tag: Coaching SessionReset

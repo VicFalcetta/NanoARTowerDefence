@@ -14,6 +14,7 @@ struct MusicHandler {
     
     static func loadAmbientSound() {
         MusicHandler.ambient_sound = MusicHandler.load(withName: "ambient_sound.mp3")
+        MusicHandler.ambient_sound?.numberOfLoops = -1
         MusicHandler.ambient_sound?.play()
     }
     static func loadGhostScream() {
