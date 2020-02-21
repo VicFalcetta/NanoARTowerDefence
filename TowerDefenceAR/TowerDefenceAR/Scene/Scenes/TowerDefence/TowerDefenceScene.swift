@@ -10,6 +10,7 @@ import SceneKit
 import ARKit
 
 class TowerDefenceScene: ARSCNView {
+    var vidas = 3
     let coach = Coaching()
     let towerDelegate = TowerDefenceARViewDelegate()
     weak var viewController: TowerViewController!
@@ -71,11 +72,8 @@ class TowerDefenceScene: ARSCNView {
         let hitTestNode = hitTest(currentTouchLocation, options: nil).first?.node
         else { return }
         if let ghost = hitTestNode.parent?.parent as? Ghost, let parent = ghost.parent {
-            let numGhost = Int.random(in: 1...3)
-            for _ in 0...numGhost {
-                if let copy = ghost.copy() as? Ghost {
-                    copy.respawn(withParent: parent)
-                }
+            if let copy = ghost.copy() as? Ghost {
+                copy.respawn(withParent: parent)
             }
             ghost.respawn(withParent: parent)
             viewController.addScore()
