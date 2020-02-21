@@ -28,17 +28,7 @@ class Ghost: SCNNode {
             nodeContainer.addChildNode(child)
         }
         nodeContainer.pivot = SCNMatrix4Rotate(nodeContainer.pivot, .pi, 0, 1, 0)
-//        nodeContainer.eulerAngles.y = .pi/2
         addChildNode(nodeContainer)
-
-        //Adicionando com a extension
-//        let nodeGhost = SCNReferenceNode(named: "ghost")
-//        addChildNode(nodeGhost)
-        
-//        Teste com caixa
-//        let ghost = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0.0)
-//        let ghostNode = SCNNode(geometry: ghost)
-//        addChildNode(ghostNode)
         
     }
     
